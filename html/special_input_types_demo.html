@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Special Input Types Demo</title>
+</head>
+<body>
+<h3><center>Customer Registration</center></h3><br><br>
+<center><form name="custForm">
+ 
+       User Name  :    <input type="text" size="25" autocomplete="off" required maxlength="15" autofocus pattern="[A-Za-z]+"/>  <br><br><!-- focus is here when page is loaded) -->
+ 
+     Password     :    <input type="password" size="25" autocomplete="off" required minlength="8" maxlength="12" pattern="[A-Za-z0-9]+"/> <br><br>     <!-- password should contain alphabets imposed using pattern attribute -->
+  
+       Email :    <input type="email" size="30" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/> <br><br>  <!-- autocomplete provides auto fill feature when set to 'on' -->
+       
+       Gender:  <input type="radio" value="Male">
+         <label for="Male">Male</label>
+         <input type="radio" value="Female">
+         <label>Female</label>
+         <input type="radio"  value="Others">
+         <label>Others</label> <br>
+       
+       Age (Yrs)  :  <input type="" size="15" autocomplete="off" required attribute : Age is necessary/>   <br><br>    <!-- required attribute : Age is necessary -->
+       
+       Address:  <textarea  rows="4" cols="50"></textarea> <br>
+ 
+       Company website:  <a href=https://www.w3schools.com/html/ target="_blank" style="color: bisque;">Website Link</a>  <br><br>
+  
+       Choose country:<select name="country" id="country">
+        <option value="india" selected>India</option>
+        <option value="united states">United States</option>
+        <option value="germany">Germany</option>
+        <option value="japan">Japan</option>
+      </select>
+       <br><br>
+       
+        Date of Journey: <input type="date" size="15" value="mm/dd/yyyy" autocomplete="off"/><br>
+    <pre>   
+<input type="submit" value="Submit" >   <input type="reset" value="Reset"></pre> 
+
+     
+<br><br>
+</form>
+</center>
+</body>
+</html>

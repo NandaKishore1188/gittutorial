@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine Booking</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 2px solid #dddddd;
+          padding: 8px;
+        }
+        
+        </style>
+</head>
+
+<center>
+<body>
+    <h3>Dine Booking</h3>
+    
+    <form name="Dine Booking">
+        <table>
+        <tr>
+            <td> 
+                Visitor Name: 
+            </td> 
+            <td>
+                <input type="text" required="required"  pattern="[A-Za-z]+" >
+            </td> 
+        </tr>
+        <tr>
+            <td> 
+                Number Of Members: 
+            </td>
+            <td>
+                <input type="number" required="required" min="1" max="99"> 
+            </td> 
+        </tr>
+        <tr>
+            <td> 
+                Contact No: 
+            </td>
+            <td>
+                <input type="text"  required="required" minlength="10" maxlength="10"  pattern="[6789][0-9]{9}" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email :
+            </td>
+            <td>
+                <input type="email" size="30" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/> 
+            </td>
+        </tr>
+        <tr>
+            <td> 
+                Type of Food:
+            </td>   
+            <td> 
+                <input type="radio" id="south indian" name="type of food" required="required" value="South Indian">
+                <label for="south indian">South Indian</label>
+
+                <input type="radio" id="north indian" name="type of food" value="North Indian">
+                <label for="north indian">North Indian</label>
+
+                <input type="radio" id="chinese" name="type of food" value="Chinese">
+                <label for="chinese">Chinese</label> 
+
+                <input type="radio" id="western" name="type of food" value="Chinese">
+                <label for="western">Western</label>
+            </td>  
+        </tr>
+        
+        <tr>
+            <td>   
+                Room Status: 
+            </td> 
+            <td>
+                <input type="radio" id="ac" name="room type" value="AC" required="required" checked>
+                <label for="ac">AC</label>
+                <input type="radio" id="non-ac" name="room type" value="AC">
+                <label for="non-ac">Non-AC</label>
+            </td>   
+        </tr>
+        <tr>
+            <td>
+        <label for="Venue" required="required">Venue Preference: </label></td>
+        <td>
+        <select name="Venue" id="venue">
+          <option value="arena">Arena</option>
+          <option value="fiesta">Fiesta</option>
+          <option value="mythri">Mythri</option>
+          <option value="magna">Magna</option>
+          <option value="oasis">Oasis</option>
+          <option value="amoeba" disabled>Amoeba</option>
+        </select> 
+        </td>
+        </tr>
+
+        <tr>
+            <td style="text-align: right;"><input type="submit" value="Book" ></td>
+            <td><input type="reset" value="Reset"></td>
+        </tr>
+    </table>
+    </form>
+
+
+</body>
+</center>
+</html>
